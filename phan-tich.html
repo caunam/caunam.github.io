@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân Tích Giao Dịch</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        input[type="number"] {
+            width: 150px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #results {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        #explanation {
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Phân Tích Giao Dịch</h1>
+        <form id="tradingForm">
+            <label for="initialCapital">Vốn Ban Đầu ($):</label>
+            <input type="number" id="initialCapital" value="100" required><br><br>
+
+            <label for="riskPercentage">Tỷ Lệ Rủi Ro (%):</label>
+            <input type="number" id="riskPercentage" value="2" required><br><br>
+
+            <label for="rewardRiskRatio">Tỷ Lệ R/R:</label>
+            <input type="number" id="rewardRiskRatio" value="1" step="any" required><br><br>
+
+            <label for="tradeCount">Số Lượng Giao Dịch:</label>
+            <input type="number" id="tradeCount" value="100" required><br><br>
+
+            <label for="improveStrategyPercent">Phương Pháp (%):</label>
+            <input type="number" id="improveStrategyPercent" value="0" min="0" max="100" required><br><br>
+
+            <button type="submit">Phân Tích</button>
+        </form>
+
+        <div id="explanation">
+            <h3>Giải Thích:</h3>
+            <ul>
+                <li>Vốn Ban Đầu ($): là số tiền hiện có trong tài khoản của bạn</li>
+                <li>Tỷ Lệ Rủi Ro (%): tức là rủi ro bạn sẽ mất nếu lệnh đó theo % tài khoản (quy tắc quản lý rủi ro thường là chỉ là 1 đến 2% tài khoản)</li>
+                <li>Tỷ Lệ R/R: Tỷ lệ Risk/Reward, ở đây mặc định là 1:1, tăng lên 2 thì 1:2 tức lỗ 1 và ăn 2 cho 1 lệnh</li>
+                <li>Số Lượng Giao Dịch: random số lượng lệnh của bạn, càng nhiều thể hiện sự hiệu quả của một phương pháp</li>
+                <li>Phương Pháp (%): đây là phương pháp giao dịch, mặc định 0% tức là tỷ lệ thắng 50%, bạn tăng 1% thì tỷ lệ thắng 51%, % càng cao thể hiện độ tư tin vào phương pháp của bạn</li>
+            </ul>
+        </div>
+
+        <div id="results">
+            <!-- Kết quả sẽ được hiển thị ở đây -->
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('tradingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            var initialCapital = parseFloat(document.getElementById('initialCapital').value);
+            var riskPercentage = parseFloat(document.getElementById('riskPercentage').value);
+            var rewardRiskRatio = parseFloat(document.getElementById('rewardRiskRatio').value);
+            var tradeCount = parseInt(document.getElementById('tradeCount').value);
+            var improveStrategyPercent = parseFloat(document.getElementById('improveStrategyPercent').value);
+            
+            var results = document.getElementById('results');
+            results.innerHTML = ''; // Xóa kết quả trước đó
+            
+            var wins = 0;
+            var losses = 0;
+            var winAmount = 0;
+            var lossAmount = 0;
+            for (var i = 0; i < tradeCount; i++) {
+                var random = Math.random(); // Số ngẫu nhiên từ 0 đến 1
+                var improvedWinRate = 0.5 + improveStrategyPercent / 200; // Tính tỷ lệ thắng cải thiện
+                var isWin = random < improvedWinRate; // Sử dụng tỷ lệ thắng cải thiện
+                if (isWin) {
+                    var winProfit = initialCapital * (riskPercentage / 100) * rewardRiskRatio;
+                    initialCapital += winProfit; // Tính toán số tiền kiếm được từ giao dịch thắng
+                    wins++;
+                    winAmount += winProfit;
+                } else {
+                    var lossAmountPerTrade = initialCapital * (riskPercentage / 100);
+                    initialCapital -= lossAmountPerTrade; // Tính toán số tiền mất đi từ giao dịch thua
+                    losses++;
+                    lossAmount += lossAmountPerTrade;
+                }
+            }
+            
+            var winPercentage = (wins / tradeCount) * 100;
+            var lossPercentage = (losses / tradeCount) * 100;
+            
+            var explanation = '';
+            if (winAmount > initialCapital && rewardRiskRatio !== 1 && losses > wins) {
+                explanation = 'Vì tỷ lệ R:R của bạn là ' + rewardRiskRatio + ', dù số lệnh thua nhiều hơn thắng nhưng vẫn cho lợi nhuận tốt.';
+            }
+            
+            if (rewardRiskRatio === 1 && losses > wins) {
+                explanation = 'Tỷ lệ R:R hiện tại của bạn là 1:1 và số lần thua nhiều hơn số lần thắng. Đề nghị tăng tỷ lệ R:R để cải thiện kết quả giao dịch.';
+            }
+            
+            if (rewardRiskRatio > 1 && lossAmount > winAmount) {
+                explanation = 'Tỷ lệ R:R của bạn lớn hơn 1, nhưng bạn đang thua lỗ. Đề nghị cải thiện phương pháp giao dịch.';
+            }
+            
+            if (improveStrategyPercent > 0 && rewardRiskRatio > 1 && lossAmount > winAmount) {
+                explanation = 'Tỷ lệ R:R của bạn lớn hơn 1 và bạn đã chọn tăng tỷ lệ thắng. Nhưng vẫn thua lỗ. Đề nghị cải thiện phương pháp giao dịch.';
+            }
+
+            if (rewardRiskRatio === 1 && improveStrategyPercent === 0 && lossAmount > winAmount) {
+                explanation = 'Bạn chưa có một tỷ lệ R:R tốt và chưa có phương pháp tốt.';
+            }
+
+            if (rewardRiskRatio === 1 && improveStrategyPercent === 0 && lossAmount < winAmount) {
+                explanation = 'Bạn đang ăn may, chưa có một tỷ lệ R:R tốt và chưa có phương pháp nào.';
+            }
+            
+            if (!explanation) {
+                explanation = 'Phương pháp giao dịch hiện tại của bạn cho kết quả thắng. Tiếp tục giữ vững phương pháp này.';
+            }
+            
+            var explanationColor = winAmount > lossAmount ? 'green' : 'red'; // Màu xanh lá cho lợi nhuận và màu đỏ cho thua lỗ
+            
+            results.innerHTML = '<p>Số Lần Thắng: ' + wins + '</p>' +
+                                '<p>Số Lần Thua: ' + losses + '</p>' +
+                                '<p>Tỷ Lệ Thắng: ' + winPercentage.toFixed(2) + '%</p>' +
+                                '<p>Tỷ Lệ Thua: ' + lossPercentage.toFixed(2) + '%</p>' +
+                                '<p>Tiền Kiếm Được Từ Thắng: $' + winAmount.toFixed(2) + '</p>' +
+                                '<p>Tiền Mất Đi Từ Thua: $' + lossAmount.toFixed(2) + '</p>' +
+                                '<p>Vốn Cuối Cùng: $' + initialCapital.toFixed(2) + '</p>' +
+                                '<p style="color: ' + explanationColor + ';">' + explanation + '</p>';
+        });
+    </script>
+
+</body>
+</html>
