@@ -2,42 +2,64 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Forex Trading Table</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quản lý vốn</title>
+<style>
+.container {
+    max-width: 1000px; /* Đặt chiều rộng của container */
+    margin: 0 auto; /* Đặt margin thành auto để căn giữa */
+    text-align: center;
+}
+
+.profit-row {
+    background-color: #d4edda; /* Green */
+}
+
+.loss-row {
+    background-color: #f8d7da; /* Light red */
+}
+</style>
 </head>
 <body>
-<h2>Forex Trading Profit Calculator</h2>
-<form id="inputForm">
-  <label for="initialAmount">Số tiền ban đầu ($):</label>
-  <input type="number" id="initialAmount" value="100"><br><br>
-  
-  <label for="riskPercentage">Rủi ro/giao dịch (%):</label>
-  <input type="number" id="riskPercentage" value="2"><br><br>
-  
-  <label for="totalTrades">Tổng số giao dịch:</label>
-  <input type="number" id="totalTrades" value="10"><br><br>
+<div class="container"> <!-- Container để chứa nội dung -->
+    <h1>Quản lý vốn</h1>
+    <form id="inputForm">
+        <label for="initialAmount">Số tiền ban đầu ($):</label>
+        <input type="number" id="initialAmount" value="100"><br><br>
+        
+        <label for="riskPercentage">Rủi ro (%):</label>
+        <input type="number" id="riskPercentage" value="2"><br><br>
+        
+        <label for="totalTrades">Tổng số giao dịch:</label>
+        <input type="number" id="totalTrades" value="10"><br><br>
 
-  <label for="RR">Tỷ lệ R:R:</label>
-  <input type="number" id="RR" value="3"><br><br>
-  
-  <button type="button" onclick="calculateForexTrading()">Tính toán</button>
-</form>
-<br>
-<table id="tradingTable" border="1">
-<thead>
-<tr>
-<th>Số thứ tự</th>
-<th>Số tiền ban đầu ($)</th>
-<th>Rủi ro/giao dịch (%)</th>
-<th>Lỗ/giao dịch ($)</th>
-<th>Tổng số tiền sau mỗi giao dịch ($)</th>
-<th>Lỗ tổng cộng sau mỗi giao dịch ($)</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
+        <label for="RR">Tỷ lệ R:R (mặc định lỗ là 1):</label>
+        <input type="number" id="RR" value="3"><br><br>
+        
+        <button type="button" onclick="calculateForexTrading('profit')">Tính toán lợi nhuận</button>
+        <button type="button" onclick="calculateForexTrading('loss')">Tính toán lỗ</button>
+    </form>
+    <br>
+
+    <h2 id="tableTitle">Bảng lợi nhuận</h2>
+    <table id="tradingTable" border="1">
+    <thead>
+    <tr>
+    <th>Số thứ tự</th>
+    <th>Số tiền ban đầu ($)</th>
+    <th>Rủi ro/giao dịch (%)</th>
+    <th id="profitLossHeader">Lợi nhuận/giao dịch ($)</th>
+    <th>Tổng số tiền sau mỗi giao dịch ($)</th>
+    <th>Lợi nhuận ròng sau mỗi giao dịch ($)</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    </table>
+</div>
+
 <script>
-function calculateForexTrading() {
+function calculateForexTrading(type) {
     var initialAmount = parseFloat(document.getElementById('initialAmount').value);
     var riskPercentage = parseFloat(document.getElementById('riskPercentage').value);
     var totalTrades = parseInt(document.getElementById('totalTrades').value);
@@ -45,6 +67,15 @@ function calculateForexTrading() {
     var tbody = document.getElementById('tradingTable').getElementsByTagName('tbody')[0];
     tbody.innerHTML = '';
     var totalLoss = 0;
+
+    if (type === 'profit') {
+        document.getElementById('tableTitle').innerHTML = 'Bảng lợi nhuận';
+        document.getElementById('profitLossHeader').innerHTML = 'Lợi nhuận/giao dịch ($)';
+    } else if (type === 'loss') {
+        document.getElementById('tableTitle').innerHTML = 'Bảng thua lỗ';
+        document.getElementById('profitLossHeader').innerHTML = 'Lỗ/giao dịch ($)';
+        RR = 1;
+    }
 
     for (var i = 1; i <= totalTrades; i++) {
         var row = tbody.insertRow();
@@ -62,11 +93,20 @@ function calculateForexTrading() {
         cell1.innerHTML = i;
         cell2.innerHTML = initialAmount.toFixed(2);
         cell3.innerHTML = riskPercentage.toFixed(2);
-        cell4.innerHTML = loss.toFixed(2); // Display loss instead of profit
-        initialAmount -= loss; // update initial amount for loss
+        
+        if (type === 'profit') {
+            cell4.innerHTML = profit.toFixed(2); // Display profit
+            initialAmount += profit; // update initial amount for compound interest
+            row.classList.add('profit-row');
+        } else if (type === 'loss') {
+            cell4.innerHTML = loss.toFixed(2); // Display loss
+            initialAmount -= loss; // update initial amount for loss
+            totalLoss += loss; // Update total loss
+            row.classList.add('loss-row');
+        }
+        
         cell5.innerHTML = initialAmount.toFixed(2);
-        totalLoss += loss; // Update total loss
-        cell6.innerHTML = totalLoss.toFixed(2); // Display total loss after each trade
+        cell6.innerHTML = type === 'profit' ? profit.toFixed(2) : totalLoss.toFixed(2);
     }
 }
 </script>
