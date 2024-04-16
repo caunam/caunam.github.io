@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Forex Trading Table</title>
+</head>
+<body>
+<h2>Forex Trading Profit Calculator</h2>
+<form id="inputForm">
+  <label for="initialAmount">Số tiền ban đầu ($):</label>
+  <input type="number" id="initialAmount" value="100"><br><br>
+  
+  <label for="riskPercentage">Rủi ro/giao dịch (%):</label>
+  <input type="number" id="riskPercentage" value="2"><br><br>
+  
+  <label for="totalTrades">Tổng số giao dịch:</label>
+  <input type="number" id="totalTrades" value="10"><br><br>
+
+  <label for="RR">Tỷ lệ R:R:</label>
+  <input type="number" id="RR" value="3"><br><br>
+  
+  <button type="button" onclick="calculateForexTrading()">Tính toán</button>
+</form>
+<br>
+<table id="tradingTable" border="1">
+<thead>
+<tr>
+<th>Số thứ tự</th>
+<th>Số tiền ban đầu ($)</th>
+<th>Rủi ro/giao dịch (%)</th>
+<th>Lỗ/giao dịch ($)</th>
+<th>Tổng số tiền sau mỗi giao dịch ($)</th>
+<th>Lỗ tổng cộng sau mỗi giao dịch ($)</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<script>
+function calculateForexTrading() {
+    var initialAmount = parseFloat(document.getElementById('initialAmount').value);
+    var riskPercentage = parseFloat(document.getElementById('riskPercentage').value);
+    var totalTrades = parseInt(document.getElementById('totalTrades').value);
+    var RR = parseFloat(document.getElementById('RR').value);
+    var tbody = document.getElementById('tradingTable').getElementsByTagName('tbody')[0];
+    tbody.innerHTML = '';
+    var totalLoss = 0;
+
+    for (var i = 1; i <= totalTrades; i++) {
+        var row = tbody.insertRow();
+        var riskAmount = initialAmount * (riskPercentage / 100);
+        var loss = riskAmount; // Loss equals to risk amount
+        var profit = loss * RR; // Use RR ratio input value
+
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        var cell6 = row.insertCell(5);
+
+        cell1.innerHTML = i;
+        cell2.innerHTML = initialAmount.toFixed(2);
+        cell3.innerHTML = riskPercentage.toFixed(2);
+        cell4.innerHTML = loss.toFixed(2); // Display loss instead of profit
+        initialAmount -= loss; // update initial amount for loss
+        cell5.innerHTML = initialAmount.toFixed(2);
+        totalLoss += loss; // Update total loss
+        cell6.innerHTML = totalLoss.toFixed(2); // Display total loss after each trade
+    }
+}
+</script>
+</body>
+</html>
