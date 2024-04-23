@@ -1,0 +1,5047 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../kinh-nghiem-su-dung-cau-truc-thi-truong-cttt-va-ob-bai-6-vung-dao-chieu-xu-huong/">
+      
+      
+        <link rel="next" href="../kinh-nghiem-su-dung-cau-truc-thi-truong-cttt-va-ob-bai-8-chi-tiet-hon-cho-bai-6/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Kinh nghiệm - Sử dụng Cấu Trúc Thị Trường (CTTT) và OB - Bài 7 - Cách mình vẽ OB - Cậu Năm</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bat-au-nhe" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Cậu Năm" class="md-header__button md-logo" aria-label="Cậu Năm" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cậu Năm
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Kinh nghiệm - Sử dụng Cấu Trúc Thị Trường (CTTT) và OB - Bài 7 - Cách mình vẽ OB
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Cậu Năm" class="md-nav__button md-logo" aria-label="Cậu Năm" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Cậu Năm
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hiểu về Nến Nhật và Price Action
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Hiểu về Nến Nhật và Price Action
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basic/1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Toàn Bộ Về Mô Hình Nến Nhật
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basic/2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bài 1 Bản Chất - Nguồn Gốc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basic/3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bài 2 Các Trường Phái Price Action Nổi Tiếng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basic/4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bài 3 - 5 Bước Để Trở Thành Một Price Action Trader
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basic/5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bài 4 Thực Chiến Đọc Hiểu Thị Trường Qua Từng Thanh Nến
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basic/6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bài 5 Đọc Hiểu Thị Trường Qua Cụm Nhiều Nến
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basic/8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phương pháp PA Bob Volman
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../part1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PHẦN I. CẤU TRÚC THỊ TRƯỜNG x KEY LEVEL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 1. Mọi Trader Phải Biết
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 1. Mọi Trader Phải Biết
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../01/11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1. Nền Tảng Quan Trọng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../01/12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2. Thị Trường Forex
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../01/13/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3. Làm Sao Kiếm Tiền Với Tài Khoản Nhỏ? *
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../01/14/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.4. Quản Lý Vốn & Rủi Ro *
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../01/15/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.5. Quan trọng trước khi bắt đầu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 2. Xác Định Keylevel Chính Xác
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 2. Xác Định Keylevel Chính Xác
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02/21/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1. Xác Định Keylevel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02/22/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2. EURJPY – Thực hành 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02/23/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3. AUDJPY – Thực hành 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02/24/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.4. EURNZD – Thực hành 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02/25/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5. EURAUD -Thực hành 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../02/26/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.6. Tổng Kết Quan Trọng Về Keylevel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 3. Cách Thị Trường Chuyển Động
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 3. Cách Thị Trường Chuyển Động
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../03/31/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1. Hiểu Cách Thị Trường Di Chuyển Để Mua Hay Bán
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../03/32/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2. Thời Điểm Vào Lệnh Đẹp Nhất
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 4. Cây Nến Kể Điều Gì Về Thị Trường?
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 4. Cây Nến Kể Điều Gì Về Thị Trường?
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../04/41/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1. Cấu Tạo Nến
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../04/42/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2. Mẫu Nến Quan Trọng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../04/43/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3. Điều Quan Trọng Nhất Khi Đọc Nến
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 5, 6, 7
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 5, 6, 7
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../05/51/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Fibonacci
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../05/52/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Momentum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../05/53/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Trendline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 8. Masterclass 1 - Cấu Trúc Thị Trường
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 8. Masterclass 1 - Cấu Trúc Thị Trường
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/81/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.1. Cấu Trúc Thị Trường – Xác Định Keylevel Quan Trọng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/82/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.2. Thời Điểm Vào Lệnh Hoàn Hảo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.3. Lý thuyết Dow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/84/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.4. Áp dụng Đầu tư Bitcoin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/85/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.5. Áp dụng Đầu tư Vàng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.6. Xác Định Keylevel Quan Trọng Chính Xác
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/87/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.7. Lọc Nhiễu Keylevel Quan Trọng 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/88/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.8. Lọc Nhiễu Keylevel Quan Trọng 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.9. Lọc Nhiễu Keylevel Quan Trọng 3 – BTC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/810/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.10. Lọc Nhiễu Keylevel Quan Trọng 4 – khi có GAP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/811/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.11. Lọc Nhiễu Keylevel Quan Trọng 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/812/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.12. Lọc Nhiễu Phá Vỡ Giả, Phá Vỡ Thật 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/813/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.13. Lọc Nhiễu Phá Vỡ Giả, Phá Vỡ Thật 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/814/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.14. Lọc Nhiễu Key Level Quan Trọng, Cấu Trúc Thị Trường 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/815/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.15. Quản Lý Stoploss Thông Minh
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../08/816/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.16. Lọc Nhiễu Keylevel Quan Trọng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 9. Masterclass 2 - Vào Lệnh Khi Xác Nhận Xu Hướng Tiếp Diễn
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 9. Masterclass 2 - Vào Lệnh Khi Xác Nhận Xu Hướng Tiếp Diễn
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../09/91/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.1. Vào Lệnh Khi Xác Nhận Xu Hướng Hồi Kết Thúc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../09/92/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.2. Vào Lệnh Khi Có Mô Hình Giá Tiếp Diễn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../09/93/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.3. EURUSD – Thực hành 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../09/94/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.4. GBPUSD – Thực hành 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../09/95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.5. GBPUSD – Thực hành 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 10. Masterclass 3 - Vào Lệnh Khi Thị Trường Đảo Chiều
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 10. Masterclass 3 - Vào Lệnh Khi Thị Trường Đảo Chiều
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../10/101/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.1. Cách Xác Nhận Xu Hướng Đảo Chiều
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../10/102/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.2. GBPAUD – Thực hành 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../10/103/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.3. EURJPY – Thực hành 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../10/104/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.4. GBPUSD – Thực hành 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 11. Masterclass Final
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 11. Masterclass Final
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../11/111/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.1. Vào Lệnh Theo Hợp Lưu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../11/112/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.2. GBPUSD – Thực hành 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../11/113/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.3. EURJPY – Thực hành 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 12. Masterclass Final +
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 12. Masterclass Final +
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../12/121/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.1. Vào Lệnh Ngược Xu Hướng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../12/122/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.2. Vào Lệnh Ngược Xu Hướng – Thực Hành 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../12/123/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.3. Vào Lệnh Ngược Xu Hướng – Thực Hành 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../12/124/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.4. Vào Lệnh Ngược Xu Hướng – Thực Hành 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 13. Vào Lệnh Chuẩn Medio
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 13. Vào Lệnh Chuẩn Medio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../13/131/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13.1. Chọn cặp tiền, chọn khung thời gian
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../13/132/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13.2. Phân tích các Timeframe để vào lệnh
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../13/133/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13.3. Các Trường Hợp Tiếp Diễn Xu Hướng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../13/134/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13.4. Keylevel Quan Trọng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 14. Quản Lý Vốn và Tâm Lý Giao Dịch
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 14. Quản Lý Vốn và Tâm Lý Giao Dịch
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../14/141/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.1. Tư Duy Khi Giao Dịch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../14/142/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.2. Tâm Lý Khi Giao Dịch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../14/143/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.3. Quản Lý Vốn Khi Trade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../14/144/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.4. Quản Lý Vốn Trong Đầu Tư
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lời Kết
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            Lời Kết
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../15/15/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lời Kết
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 15. Dòng Tiền Khi Ngủ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 15. Dòng Tiền Khi Ngủ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../15/151/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15.1. Bước quan trọng đầu tiên
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../15/152/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15.2. Xây dựng nguồn thu nhập thụ động
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../15/153/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15.3. Đầu tư tự động và Tối ưu lợi nhuận trong Crypto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basic/7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bài 6 Thực Chiến Đọc Hiểu Thị Trường Qua Cụm Nhiều Nến
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PHẦN II. CẤU TRÚC THỊ TRƯỜNG x ORDER BLOCK (OB)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_18" >
+        
+          
+          <label class="md-nav__link" for="__nav_18" id="__nav_18_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 8. Order Block (OB)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_18">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 8. Order Block (OB)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/08/81/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.1. Lý do sử dụng Order Block
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/08/82/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.2. Cách xác định Order Block cơ bản
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/08/83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.3. Order Block Đúng Và Đủ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/08/84/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.4. Khối Order Block nào nên giao dịch?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_19" >
+        
+          
+          <label class="md-nav__link" for="__nav_19" id="__nav_19_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 9. Hiểu Về Cấu Trúc Thị Trường
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_19_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_19">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 9. Hiểu Về Cấu Trúc Thị Trường
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/09/91/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.1. Tổng Quan Cấu Trúc Thị Thường
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/09/92/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.2. Xác Định Keylevel Quan Trọng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/09/93/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.3. Xác Định Vùng Đảo Chiều Tiếp Diễn Xu Hướng 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/09/94/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.4. Xác Định Vùng Đảo Chiều Tiếp Diễn Xu Hướng 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/09/95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.5. Vào Lệnh Chắc Chắn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/09/96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.6. Vào Lệnh Chông Chênh
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_20" >
+        
+          
+          <label class="md-nav__link" for="__nav_20" id="__nav_20_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bài 10. Cấu Trúc Thị Trường Nâng Cao
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_20">
+            <span class="md-nav__icon md-icon"></span>
+            Bài 10. Cấu Trúc Thị Trường Nâng Cao
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/10/101/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.1. Mở Đầu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/10/102/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.2. Lý Thuyết Dow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/10/103/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.3. Ví dụ thực tế Lý Thuyết Dow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/10/104/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.4. Thị Trường Kiểu Ruộng Bậc Thang
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/10/105/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.5. Chọn Khung Thời Gian Giao Dịch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ob/10/106/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.6. Kết Thúc Chương
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basic/sc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ảnh chụp màn hình
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_22" >
+        
+          
+          <label class="md-nav__link" for="__nav_22" id="__nav_22_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PHẦN HỘI QUÁN
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_22_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_22">
+            <span class="md-nav__icon md-icon"></span>
+            PHẦN HỘI QUÁN
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/tong-hoptat-tan-tat-ve-keylevel-quan-trong-tu-a-z-nam-2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tất tần tật về Keylevel quan trọng từ A-Z năm 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BQuan%20tr%E1%BB%8Dng%5D%20C%E1%BA%A5u%20tr%C3%BAc%20th%E1%BB%8B%20tr%C6%B0%E1%BB%9Dng%20%26%20C%C3%A1ch%20th%E1%BB%8B%20tr%C6%B0%E1%BB%9Dng%20di%20chuy%E1%BB%83n/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cấu trúc thị trường & Cách thị trường di chuyển
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_23" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_23" id="__nav_23_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cấu trúc thị trường x OB
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_23_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_23">
+            <span class="md-nav__icon md-icon"></span>
+            Cấu trúc thị trường x OB
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../order-block-phan-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order Block - Phần 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../order-block-phan-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order Block - Phần 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../order-block-phan-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order Block - Phần 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../order-block-phan-4-thuc-hanh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order Block - Phần 4 - Thực hành
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../order-block-phan-5-ob-het-han-ob-con-han/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order Block - Phần 5 - OB hết hạn, OB còn hạn_
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kinh-nghiem-su-dung-cau-truc-thi-truong-cttt-va-ob-bai-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Sử dụng Cấu trúc thị trường (CTTT) và OB - Bài 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kinh-nghiem-su-dung-cau-truc-thi-truong-cttt-va-ob-bai-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Sử dụng Cấu trúc thị trường (CTTT) và OB - Bài 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kinh-nghiem-su-dung-cau-truc-thi-truong-cttt-va-ob-bai-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Sử dụng Cấu Trúc Thị Trường (CTTT) và OB - Bài 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kinh-nghiem-su-dung-cau-truc-thi-truong-cttt-va-ob-bai-4-nang-cao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Sử dụng Cấu Trúc Thị Trường (CTTT) và OB - Bài 4 (Nâng cao)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kinh-nghiem-su-dung-cau-truc-thi-truong-cttt-va-ob-bai-5-tap-buong-bo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Sử dụng Cấu Trúc Thị Trường (CTTT) và OB - Bài 5 - Tập buông bỏ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kinh-nghiem-su-dung-cau-truc-thi-truong-cttt-va-ob-bai-6-vung-dao-chieu-xu-huong/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Sử dụng Cấu Trúc Thị Trường (CTTT) và OB - Bài 6 - Vùng đảo chiều xu hướng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Sử dụng Cấu Trúc Thị Trường (CTTT) và OB - Bài 7 - Cách mình vẽ OB
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kinh-nghiem-su-dung-cau-truc-thi-truong-cttt-va-ob-bai-8-chi-tiet-hon-cho-bai-6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Sử dụng Cấu Trúc Thị Trường (CTTT) và OB - Bài 8 - Chi tiết hơn cho bài 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kinh-nghiem-su-dung-cau-truc-thi-truong-cttt-va-ob-bai-9-nang-cao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Sử dụng Cấu Trúc Thị Trường (CTTT) và OB - Bài 9 (Nâng cao)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tong-hop-quy-trinh-vao-lenh-cau-truc-thi-truong-x-order-block-chua-su-dung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tổng Hợp - Quy trình vào lệnh Cấu Trúc Thị Trường x Order Block chưa sử dụng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_24" >
+        
+          
+          <label class="md-nav__link" for="__nav_24" id="__nav_24_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_24_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_24">
+            <span class="md-nav__icon md-icon"></span>
+            Mưu hèn kế bẩn
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-1-sl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn Trading - Bài 1 - SL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-10-mot-bai-khong-ten/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn Trading - Bài 10 - Một bài không tên
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-11-keylevel-quan-trong/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn Trading - Bài 11 - Keylevel quan trọng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-12-chon-timeframe-vao-lenh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn Trading - Bài 12 - Chọn timeframe vào lệnh
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-13-toan-bac-thang-khong-tim-thay-klqt-thi-lam-sao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn Trading - Bài 13 - Toàn bậc thang, không tìm thấy KLQT thì làm sao_
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-14-cach-de-khong-phai-doi-xac-nhan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn Trading - Bài 14 - Cách để không phải đợi xác nhận
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-2-qua-nhieu-ob-chua-su-dung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn trading - Bài 2 - Quá nhiều OB chưa sử dụng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-3-khong-la-gi-la-gi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn trading - Bài 3 - Không là gì là gì_
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-4-quy-tac-trade-cua-minh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn trading - Bài 4 - Quy tắc trade của mình
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-5-xu-ly-tinh-huong-tu-a-den-a/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn trading - Bài 5 - Xử lý tình huống từ A đến Á
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-6-ly-thuyet-dow-ver-20/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn trading - Bài 6 - Lý thuyết Dow ver 2.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-7-cach-minh-nhin-nhanh-cttt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn trading - Bài 7 - Cách mình nhìn nhanh CTTT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-8-noi-bat-dau-xu-huong/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn trading - Bài 8 - Nơi bắt đầu xu hướng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-9-comeback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn Trading - Bài 9 - Comeback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/muu-hen-ke-ban-trading-bai-91-da-chon-thi-cu-chon-cai-tot-nhat/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mưu hèn kế bẩn Trading - Bài 9.1 - Đã chọn thì cứ chọn cái tốt nhất
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mhkb/tong-hoptat-tan-tat-ve-keylevel-quan-trong-tu-a-z-nam-2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tổng hợp -Tất tần tật về Keylevel quan trọng từ A-Z năm 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_25" >
+        
+          
+          <label class="md-nav__link" for="__nav_25" id="__nav_25_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Phá vỡ giả
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_25">
+            <span class="md-nav__icon md-icon"></span>
+            Phá vỡ giả
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../phavogia/kinh-nghiem-keylevel-quan-trong-pha-vo-gia-va-that-bai-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Keylevel quan trọng, phá vỡ giả và thật - Bài 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../phavogia/kinh-nghiem-keylevel-quan-trong-pha-vo-gia-va-that-bai-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Keylevel quan trọng, phá vỡ giả và thật - Bài 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../phavogia/kinh-nghiem-keylevel-quan-trong-pha-vo-gia-va-that-bai-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Keylevel quan trọng, phá vỡ giả và thật - Bài 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../phavogia/kinh-nghiem-keylevel-quan-trong-pha-vo-gia-va-that-bai-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Keylevel quan trọng, phá vỡ giả và thật - Bài 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_26" >
+        
+          
+          <label class="md-nav__link" for="__nav_26" id="__nav_26_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sổ tay
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_26_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_26">
+            <span class="md-nav__icon md-icon"></span>
+            Sổ tay
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sotay/kinh-nghiem-cach-minh-da-van-va-dang-hoc-price-action/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Cách mình đã, vẫn và đang học Price Action
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sotay/so-tay-trader-4-tu-duy-quan-trong-trong-viec-phan-tich-ra-quyet-dinh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sổ Tay Trader - 4 tư duy quan trọng trong việc phân tích ra quyết định
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sotay/so-tay-trader-cau-truc-thi-truong-phan-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sổ Tay Trader - Cấu Trúc Thị Trường - Phần 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sotay/so-tay-trader-cau-truc-thi-truong-phan-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sổ Tay Trader - Cấu Trúc Thị Trường - Phần 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sotay/so-tay-trader-cau-truc-thi-truong-phan-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sổ Tay Trader - Cấu Trúc Thị Trường - Phần 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sotay/so-tay-trader-cau-truc-thi-truong-phan-4-ly-thuyet-dow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sổ Tay Trader - Cấu Trúc Thị Trường - Phần 4 Lý thuyết DOW
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sotay/so-tay-trader-cau-truc-thi-truong-phan-5-noi-bat-dau-xu-huong/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sổ Tay Trader - Cấu Trúc Thị Trường - Phần 5 Nơi Bắt Đầu Xu Hướng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sotay/so-tay-trader-cot-loi-cua-hoi-va-di-ngang/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sổ Tay Trader - Cốt lõi của HỒI và ĐI NGANG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sotay/so-tay-trader-momentum-yeu-to-quan-trong-dung-lang-quen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sổ Tay Trader - Momentum - Yếu tố quan trọng đừng lãng quên!
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sotay/so-tay-trader-quy-trinh-phan-tich-lenh-chuan-price-action-master/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sổ Tay Trader - Quy trình phân tích lệnh “chuẩn” Price Action Master
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sotay/so-tay-trader-doc-va-hieu-nen-dieu-khong-the-thieu-cua-price-action-trader/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sổ Tay Trader - Đọc và Hiểu nến - Điều không thể thiếu của Price Action Trader
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quan-trong-cau-truc-thi-truong-cach-thi-truong-di-chuyen.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quan trọng - Cấu trúc thị trường & Cách thị trường di chuyển
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_27" >
+        
+          
+          <label class="md-nav__link" for="__nav_27" id="__nav_27_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chia sẻ hay
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_27_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_27">
+            <span class="md-nav__icon md-icon"></span>
+            Chia sẻ hay
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chiasehay/chia-se-cach-tri-chung-tau-hoa-nhap-ma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chia sẻ cách trị chứng tẩu hoả nhập ma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chiasehay/chia-se-mot-so-cach-xac-dinh-klv-quan-trong-cho-nguoi-moi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chia sẻ một số cách xác định KLV quan trọng cho người mới
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chiasehay/chia-se-quy-tac-giup-minh-co-chuoi-win-16-lenh-real/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chia sẻ quy tắc giúp mình có chuỗi win 16 lệnh real
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chiasehay/trailingstop-chot-loi-tung-phan-bi-quyet-giup-minh-co-loi-nhuan-deu-dan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trailingstop + Chốt lời từng phần - Bí quyết giúp mình có lợi nhuận đều đặn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chiasehay/tac-dung-than-ki-cua-viec-nhin-nhieu-timeframe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tác dụng thần kì của việc nhìn nhiều timeframe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chiasehay/bot-auto-doi-sl-va-chot-loi-tung-phan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bot - Auto dời SL và chốt lời từng phần
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chiasehay/kinh-nghiem-chia-se-tip-xac-dinh-va-ve-key-level-chinh-xac/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Chia sẻ Tip xác định và vẽ key level chính xác
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chiasehay/kinh-nghiem-cach-lua-chon-phuong-an-quan-ly-lenh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Cách lựa chọn phương án quản lý lệnh
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chiasehay/kinh-nghiem-khong-la-gi-ca-va-cai-ket-bat-ngo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Không là gì cả và cái kết bất ngờ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chiasehay/kinh-nghiem-nhung-dau-hieu-co-the-ban-da-phan-tich-sai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Những dấu hiệu có thể bạn đã phân tích sai
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chiasehay/kinh-nghiem-the-nao-la-hoi-dep-va-hoi-khong-dep/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Thế nào là hồi đẹp và hồi không đẹp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_28" >
+        
+          
+          <label class="md-nav__link" for="__nav_28" id="__nav_28_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Crypto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_28_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_28">
+            <span class="md-nav__icon md-icon"></span>
+            Crypto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/bai-hoc-dau-tu-crypto-phan-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bài học Đầu tư Crypto - Phần 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/chon-crypto-de-hold-theo-kieu-khong-lam-ma-van-muon-an/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chọn Crypto để hold theo kiểu không làm mà vẫn muốn ăn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/cach-lam-giau-it-ap-luc-de-dang-hon-trade-forex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cách làm giàu ít áp lực dễ dàng hơn trade forex
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/cau-tra-loi-chac-chan-la-khong-co-gi-chac-chan-ca/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Câu trả lời chắc chắn là không có gì chắc chắn cả
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/phan-tich-gia-altcoin-cach-minh-tu-duy-trong-thi-truong-coin-crypto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phân tích giá Altcoin & Cách mình tư duy trong thị trường Coin, Crypto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/phan-tich-gia-bitcoin-cach-minh-tu-duy-trong-thi-truong-coin-crypto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phân tích giá Bitcoin & Cách mình tư duy trong thị trường Coin, Crypto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/phan-tich-gia-bitcoin-day-cua-bitcoin-chu-ky-nay-la-bao-nhieu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phân tích giá Bitcoin - Đáy của Bitcoin chu kỳ này là bao nhiêu_
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/qua-trinh-phan-tich-de-dau-tu-vao-1-dong-coin-va-cam-xuc-khi-do-cua-minh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quá trình phân tích để đầu tư vào 1 đồng coin và cảm xúc khi đó của mình
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/-so-tay-dau-tu-giam-thieu-rui-ro-trong-dau-tu-bai-hoc-tu-ba-thim-ban-trung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sổ Tay Đầu Tư - Giảm thiểu rủi ro trong đầu tư - Bài học từ bà thím bán trứng
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/cam-nang-dau-tu-tien-dien-tu-crypto-bai-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cẩm nang - Đầu tư tiền điện tử - Crypto - Bài 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/cam-nang-dau-tu-tien-dien-tu-crypto-bai-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cẩm nang - Đầu tư Tiền điện tử - Crypto - Bài 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/cam-nang-dau-tu-tien-dien-tu-crypto-bai-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cẩm nang - Đầu tư tiền điện tử - Crypto - Bài 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/cam-nang-dau-tu-tien-dien-tu-crypto-bai-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cẩm nang - Đầu tư tiền điện tử - Crypto - Bài 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/cam-nang-dau-tu-tien-dien-tu-crypto-bai-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cẩm nang - Đầu tư tiền điện tử - Crypto - Bài 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/dong-tien-khi-ngu-phan-1-tiet-kiem-tien-buoc-di-quan-trong-nhat/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dòng Tiền Khi Ngủ - Phần 1_ Tiết kiệm tiền - Bước đi quan trọng nhất
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/dong-tien-khi-ngu-phan-2-xay-dung-nguon-thu-nhap-thu-dong/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dòng Tiền Khi Ngủ - Phần 2_ Xây dựng nguồn thu nhập thu động
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/kinh-nghiem-dau-tu-altcoin-cua-minh-va-tan-man-ve-nhung-gi-da-qua/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinh nghiệm - Đầu tư Altcoin của mình và tản mạn về những gì đã qua
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/so-tay-dau-tu-dau-tu-crypto-hoan-hao-tu-a-den-z/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sổ Tay Đầu Tư - Đầu tư Crypto hoàn hảo từ A đến Z
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/dau-tu-an-nhien-cach-de-co-tam-ly-vung-vang-trong-nhung-thi-truong-song-gio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ĐẦU TƯ AN NHIÊN - Cách để có tâm lý vững vàng trong những thị trường sóng gió
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crypto/dau-tu-hai-sai-lam-khi-dau-tu-ma-trader-de-mac-phai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Đầu Tư - Hai sai lầm khi đầu tư mà trader dễ mắc phải
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div><p>Chào các bạn. Tiếp tục cùng mình đến với 1 bài không thể bỏ qua trong chuỗi series này. Bài này nói về cách mình kẻ khối OB và cách mình lựa chọn tình huống để trade. Mình nghĩ bài này sẽ giải quyết phần nào vấn đề cho ai còn đang loay hoay với việc kẻ khối OB.</p>
+<p>Nói thật là giờ trong đầu mình trống trơn vì chưa định hình được cấu trúc bài như này và cũng chẳng biết phải viết những cái gì trong bài cả. Cách vẽ thì nó chỉ có thế, mình thấy nhiều bạn cũng vẽ tốt rồi nhưng lại có người vẫn đang loay hoay nên mình viết bài này nói về cách mình vẽ. Và mình cũng không biết rõ vấn đề của từng người là gì vì mỗi người sẽ có 1 vấn đề khác nhau nên là mình lại làm dạng liệt kê giống bài trước để từ đó bạn suy luận nhé. Và luôn nhớ là bài này theo dạng liệt kê, nói rõ từng trường hợp nhưng hãy nhìn rồi đó rồi cứ thoải mái tư duy theo theo góc nhìn của bản thân nhé. Hy vọng nó sẽ giúp bạn gỡ rối phần lớn những câu hỏi của bạn.</p>
+<h1 id="bat-au-nhe"><a href="#bt-u-nh-1"></a>BẮT ĐẦU NHÉ</h1>
+<p>Mình có 1 quy tắc là mình luôn ưu tiên vào lệnh ở khối OB chưa sử dụng đúng và đủ. Nếu mình có mạo hiểm vào lệnh mà không đợi xác nhận thì mình cũng thường có xu hướng chỉ vào lệnh ở khối OB chưa sử dụng đúng và đủ vì vào lệnh ở đó thì khả năng quản lý được lệnh nó cao.</p>
+<p>Đó là cái ưu tiên của mình. Mình khuyên ae chưa thành thạo thì chỉ vào lệnh ở khối OB chưa sử dụng đúng và đủ thôi. Nhưng trước hết cần làm rõ lại cách vẽ OB đúng và đủ trước hết đã nhé.</p>
+<blockquote>
+<p>Khối OB đúng và đủ đơn giản chỉ là vùng giá tính từ điểm cao nhất tới điểm thấp nhất.</p>
+</blockquote>
+<p><img alt="" src="../../../assets/cdf97489a1d7266d1c5716508aa60a16b2294538.png"></p>
+<p>Nếu trong CTTT, KLQT thì OB đúng và đủ mình hay nói là vùng giá trùm từ KLQT tới đỉnh “đáy” cũ luôn.</p>
+<p><img alt="" src="../../../assets/257a40921f8c24458020d6e92104f5cf5c54e03d.png"></p>
+<p>Lý thuyết nó chỉ có vậy thôi, đi vào ví dụ để hiểu rõ hơn nhé.</p>
+<p><img alt="" src="../../../assets/e03cdaae4a1e43b6d30275aa2a406ff9e156f5ea.png"></p>
+<p>Có thể bạn sẽ vẽ như này</p>
+<p><img alt="" src="../../../assets/da40b8e777b742a0772f34b7e20656ccc09f8898.png"></p>
+<p>Nhưng mình thì lại vẽ như này</p>
+<p><img alt="" src="../../../assets/053fff410a1f4a47ac28aaaa3cd734f00a74565c.png"></p>
+<p>Dựa vào lý thuyết ở trên từ điểm cao nhất tới điểm nhất thì đến đây chắc ai cũng hiểu rồi. Nhưng chắc chắn sẽ có người chưa hiểu thì cùng mình đi vào biểu đồ giản đơn hơn nhé</p>
+<p><img alt="" src="../../../assets/3170bed900480ddab5cf5a0d07a8715102953f3c.png"></p>
+<p>Biểu đồ chỉ như trên thì không còn gì để nói rồi. Nhưng mình thay thế đoạn sau 1 chút như này</p>
+<p><img alt="" src="../../../assets/9a022bcf3289cebccef48aa59b2d2d00355b8420.png"></p>
+<p>Thì có thể bạn xác định OB đúng và đủ nó lại nhỏ đi như này</p>
+<p><img alt="" src="../../../assets/0c4c9231e0afbe7b6daf0a70b4afbc1fc04c696f.png"></p>
+<p>Nhưng với mình thì mình vẫn vẽ OB đúng và đủ to như cũ. Lý do là với mình 1 khối OB đúng và đủ là khối OB được tính từ điểm cao nhất tới điểm thấp, một vùng giá trọn vẹn của bên yếu thế trước khi bị bên mạnh đẩy giá phá khỏi định hoặc đáy trước đó. Vì thế mà việc vẽ khối OB đúng và đủ nó nhỏ đi như vậy thì sẽ có nhiều trường hợp cực kì nguy hiểm, gây phán đoán sai.</p>
+<p><img alt="" src="../../../assets/997d460ce402acb7e3158e9c89956c2e3ed63e43.png"></p>
+<p>Cái này nó hơi giống KLQT 1 tí và đúng thực là chả có gì để nói. Mình chỉ đang làm là thống nhất và làm rõ lại tránh việc xác định khối OB đúng và đủ sai.</p>
+<p>Đó là việc xác định 1 khối OB đúng và đủ thuần.</p>
+<p>Ví dụ trên là trường hợp không rõ CTTT, không rõ KLQT thì xác định như vậy còn trường hợp mà rõ CTTT, rõ KLQT thì cái OB đúng và đủ đó cũng chính vùng giá trùm từ đỉnh, đáy cũ tới KLQT luôn.</p>
+<p><img alt="" src="../../../assets/9f6babc5f0d5f926caa4d1aaa16cfef4b9dd3a27.png"></p>
+<p>OK đến đây là thống nhất xong khối OB đúng và đủ rồi. Chả có gì nói nhiều nhưng mình dám chắc khi trade đôi lúc bạn cũng vẫn sẽ bị nhầm ở cái đơn giản này. Cái này đến giờ đôi khi mình vẫn bị nhầm và sai khi mà bị ngáo ngơ.</p>
+<p>Lưu ý là đây mới chỉ đang là OB đúng và đủ còn việc nó chưa sử dụng hay đã sử dụng thì chưa bàn tới. Và giờ mới là nội dung chính của bài này</p>
+<h1 id="i-co-ob-chua-su-dung-ung-va-u"><a href="#i-c-ob-cha-s-dng-ng-v-2"></a>I. Có OB chưa sử dụng đúng và đủ.</h1>
+<p>Đây là trường hợp mình thích vào nhất, khi trade vào lệnh ở OB chưa sử dụng đúng và đủ thì tỉ lệ thắng sẽ rất cao. Mà không thắng thì ít nhất là quản lý được lệnh.</p>
+<p>Mình sẽ lấy 1 vài ví dụ về OB chưa sử dụng đúng và đủ.</p>
+<h3 id="vi-du-1"><a href="#v-d-1-3"></a>Ví dụ 1</h3>
+<p><img alt="" src="../../../assets/61797b925e9fe9b8884386fe0d0e054c79f9bae1.png"></p>
+<p>Kết quả</p>
+<p><img alt="" src="../../../assets/1a0f24b025233e68c4510faaddeba4d15d7d4450.png"></p>
+<p>Đây cũng là cái lệnh mà thời điểm mình viết bài này thì nhiều ae cũng đã vào được.</p>
+<h3 id="vi-du-2"><a href="#v-d-2-4"></a>Ví dụ 2</h3>
+<p><img alt="" src="../../../assets/97d9a4de3c11b6cf879ace93d06b0420d9018db5.png"></p>
+<p><img alt="" src="../../../assets/e504d69c035d0a9251d2b3ec5a64ae2e32444cf4.png"></p>
+<p>Kết quả</p>
+<p><img alt="" src="../../../assets/029c56824484b156334f780b709297af62bf226f.png"></p>
+<h2 id="ket-luan"><a href="#kt-lun-5"></a>Kết luận</h2>
+<p>Luôn luôn nhớ không bao giờ được quên là lúc nào cũng cần kiểm tra xem OB đúng và đủ đó đã sử dụng chưa rồi mới vào lệnh chứ không bao giờ thấy khơi khơi 1 timeframe như vậy mà vào lệnh nhé.</p>
+<p>Và đây cũng là trường hợp vào lệnh tự tin và yêu thích của mình. Mình cũng rất thích vào lệnh khi OB đúng đủ chưa sử dụng ở KLQT.</p>
+<p>Vậy OB đúng và đủ nhưng đã được sử dụng thì sao?</p>
+<p>\=&gt; Đến đây thì nó chia ra 2 trường hợp</p>
+<h1 id="ii-ob-ung-va-u-nhung-lai-la-ob-a-uoc-su-dung"><a href="#ii-ob-ng-v-nhng-li-l-ob-c-s-dng-6"></a>II. OB đúng và đủ nhưng lại là OB đã được sử dụng</h1>
+<h2 id="a-truong-hop-1"><a href="#a-trng-hp-1-7"></a>a. Trường hợp 1</h2>
+<p><img alt="" src="../../../assets/4e2538b66d576ada2494bdb4033b6bd1f8b1abb4.png"></p>
+<p><img alt="" src="../../../assets/50dbc73108914c5966eecd59e723771abffceb4b.png"></p>
+<p>Giá sử dụng kiểu này thì những khối OB chưa sử dụng nhỏ bên trong nó mà vẫn chưa được sử dụng thì với mình mình coi như không còn tác dụng trong CTTT.</p>
+<p><img alt="" src="../../../assets/2a479d88b3b6ee5adc6d65c996ddc547b99b5df2.png"></p>
+<h3 id="vi-du"><a href="#v-d-8"></a>Ví dụ</h3>
+<p><img alt="" src="../../../assets/c373e388a7ffde767bafcdddf4b906b602d310e5.png"></p>
+<p><img alt="" src="../../../assets/c348247fe6e665056ea7f1d4ba5d03ebbf02e981.png"></p>
+<p>Vì thế khi muốn bán thì chúng ta hay bán kiểu này</p>
+<p><img alt="" src="../../../assets/2d2a7d43942deda7186485f4d40e82bc3ce005fb.png"></p>
+<p><img alt="" src="../../../assets/e21bb0dda67b7ab6656a9f31c5c11d3bd774e210.png"></p>
+<p><img alt="" src="../../../assets/f6aad782a56adc8f739260713db67a8cb3e9820b.png"></p>
+<h2 id="b-truong-hop-2"><a href="#b-trng-hp-2-9"></a>b. Trường hợp 2</h2>
+<p><img alt="" src="../../../assets/8c533610481eee6a32e69ffdebdf70e553b375de.png"></p>
+<p>Trường hợp 1 thì OB đúng và đủ chưa sử dụng, giá vòng xuống để sử dụng. Còn trường hợp này thì nó sử dụng ngay lập tức khi nó vừa chào đời. Biểu đồ nến thì nó như này.</p>
+<p><img alt="" src="../../../assets/6023702a711d0c0f829fe74074a32a0ab42754d6.png"></p>
+<p>Thế thì đây là trường hợp không có OB đúng đủ chưa sử dụng nên cẩn thận mới vào lệnh dù thấy có OB chưa sử dụng ở KLQT. Tốt nhất nên đợi xác nhận ở khung nhỏ là an tâm nhất.</p>
+<p>Nhiều bạn thấy OB chưa sử dụng ở KLQT thì vào lệnh luôn như này</p>
+<p><img alt="" src="../../../assets/246b7f22e44707bb1b14d7a71e32153a4debd44c.png"></p>
+<p>Vào như vậy là phải có xác nhận. Xác nhận kiểu như chạm khung lớn đảo chiều xu hướng hồi thì mới vào như vậy. Chứ nếu chỉ dự đoán là giá chưa là gì nó sẽ đi tiếp mà vào như là ẩu nha.</p>
+<p>Muốn vào ẩu, muốn mạo hiểm vào lệnh không đợi xác nhận thì mình khuyên chỉ nên chọn khối OB chưa sử dụng đúng và đủ thôi. Vào lệnh ở khối OB chưa sử dụng đúng và đủ thì khi sai, khả năng quản lý lệnh nó cao hơn nhiều.<br>
+Nhiều lần mình cũng phân tích thiếu, phân tích sai nhưng vì vào lệnh ở OB chưa sử dụng đúng và đủ mà mình tránh được những lệnh thua ngu ngốc.</p>
+<h1 id="tong-ket"><a href="#tng-kt-10"></a>Tổng kết</h1>
+<p>Về cơ bản vì bài này nó chỉ có vậy thôi. Từ bài này hãy luyện tập thật nhiều trên biểu đồ để thấy những trường hợp còn lại. Từ đó kết hợp thật nhuần nhuyễn với bài 6, bài về CTTT thì mình tin kết quả sẽ cải thiện nhanh thôi.</p>
+<p>Bài số 6 và bài 7 là key chính của chuỗi bài này. Và mình nhắc lại 2 điều mấu chốt và luôn cần phải nhớ trước khi vào lệnh:</p>
+<ol>
+<li>
+<p>Luôn kiểm tra ở tf nhỏ hơn để chắc chắn đó là khối OB chưa sử dụng</p>
+</li>
+<li>
+<p>Kể cả đã có xác nhận rồi thì cũng chỉ nên vào lệnh ở khối OB chưa sử dụng. Không có OB chưa sử dụng thì dù có xác nhận cũng bỏ.</p>
+</li>
+</ol>
+<p>Hi vọng là mọi người trade tốt.</p>
+<h1 id="bonus"><a href="#bonus-11"></a>Bonus</h1>
+<p>Đi vào 1 ví dụ ngắn nhé</p>
+<p><img alt="" src="../../../assets/f9ee4c97ca729c6c02f94352158154ed9512d480.png"></p>
+<p><img alt="" src="../../../assets/092da747feac4bfe8cd3217f669460fb32e09291.png"></p>
+<p>Nếu bạn chưa thạo, chưa tự tin vào nhận định cá nhân thì đơn giản là cứ dự đoán cái chỗ nó sẽ hồi về ấy. Rồi cứ đợi nó hồi về đấy và đảo chiều xu hướng hồi ấy thì lúc đấy mới vào lệnh.</p>
+<p>Còn nếu bạn đã thạo muốn mạo hiểm và biết nếu mạo hiểm thì có thể mạo hiểm được ở đâu để đỡ mạo hiểm thì sẽ có khuynh hướng đặt luôn 1 lệnh limit ngay ở thời điểm này.</p>
+<p>Vây đâu là nơi đáng để mạo hiểm.</p>
+<p>Ngồi xem ảnh trên trước để xem chỗ nào đáng mạo hiểm trước khi xem ảnh dưới nhé.</p>
+<p><img alt="" src="../../../assets/5f64f6b5488236a2b154e44c2390d75dd12bc044.png"></p>
+<p>Chưa đủ. Cần thêm OB chưa sử dụng đúng và đủ nữa.</p>
+<p><img alt="" src="../../../assets/6eebf5668732c8b5313bed0f41daf8664264ba83.png"></p>
+<p>Kiểm tra khung nhỏ</p>
+<p><img alt="" src="../../../assets/75691e615a20cf19e08febc6e09710962de8da3a.png"></p>
+<p>Cộng thêm việc nhìn cả xu hướng giảm đấy thì không còn bất cứ 1 cái OB chưa sử dụng nào. Còn đúng 1 cái ở KLQT như ở trên.</p>
+<p>Thế thì đấy mới nơi đáng để mạo hiểm vào lệnh luôn mà không đợi xác nhận.</p>
+<p><img alt="" src="../../../assets/d1facbebbaafd955853c5816767b49bc3fbdc3dd.png"></p>
+<p>Hi vọng qua bài này mọi người xác định tốt hơn. Biết khi nào nên dừng và đợi hợp lý hơn. Tuy nhiên khi trade thì chắc chắn không tránh khỏi có những thời điểm mà cảm xúc lấn át ý chí muốn vào sớm, thế thì cũng biết chọn nơi an toàn để đặt cược rủi ro chứ không khơi khơi đặt lệnh 1 cách dễ bị SL ngay lập tức được.</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../kinh-nghiem-su-dung-cau-truc-thi-truong-cttt-va-ob-bai-6-vung-dao-chieu-xu-huong/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Kinh nghiệm - Sử dụng Cấu Trúc Thị Trường (CTTT) và OB - Bài 6 - Vùng đảo chiều xu hướng">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Kinh nghiệm - Sử dụng Cấu Trúc Thị Trường (CTTT) và OB - Bài 6 - Vùng đảo chiều xu hướng
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../kinh-nghiem-su-dung-cau-truc-thi-truong-cttt-va-ob-bai-8-chi-tiet-hon-cho-bai-6/" class="md-footer__link md-footer__link--next" aria-label="Next: Kinh nghiệm - Sử dụng Cấu Trúc Thị Trường (CTTT) và OB - Bài 8 - Chi tiết hơn cho bài 6">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Kinh nghiệm - Sử dụng Cấu Trúc Thị Trường (CTTT) và OB - Bài 8 - Chi tiết hơn cho bài 6
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Năm
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.footer"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
